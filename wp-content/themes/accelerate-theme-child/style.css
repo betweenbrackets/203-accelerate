@@ -22,7 +22,7 @@ Text Domain:  accelerate-theme-child
 background: #45ac9d;
 }
 
-/* ----- Front Page Styles  */
+/* ----- Front Page  */
 .blog-post {
 	width: 50%;
 	float: left;
@@ -47,4 +47,67 @@ background: #45ac9d;
 	font-weight: 700;
 	color: #45ac9d;
 	text-transform: uppercase;
+}
+
+ul#menu-social-media-nav.social-media-menu {
+    text-align: center;
+    list-style-type: none;
+}
+
+ul#menu-social-media-nav.social-media-menu li { 
+    display: inline-block;
+}
+
+ul#menu-social-media-nav.social-media-menu li :before {
+    color: #909090;
+}
+
+/* ----- Featured Work on Front Page */
+.featured-work h4 {
+    text-align: center;
+    text-transform: uppercase;
+}
+.homepage-featured-work {
+    text-align: center;
+    list-style-type: none;
+}
+.individual-featured-work {
+    display: inline-block;
+    margin-right: 1.5em;
+}
+
+/* ----- Case Studies Single Page */
+.case-study-sidebar h2 {
+    font-weight: normal;
+    margin-bottom: 0;
+}
+.case-study-sidebar h4 {
+    font-size: .75em;
+    font-weight: normal;
+    color: #a6a6a6;
+    text-transform: none;
+    margin: 0;
+}
+.case-study-sidebar h5 {
+    font-size: .75em;
+    font-weight: normal;
+    color: #a6a6a6;
+    text-transform: none;
+    margin: 0;
+}
+.read-more-link p {
+    color: #45ac9d;
+    text-transform: uppercase;
+}
+
+/* ----- Case Studies Archive Page */
+aside.case-study-sidebar {
+    float: left;
+    width: 34%;
+    margin: 0 6% 0 0;
+}
+div.case-study-images {
+    float: left;
+    width: 60%;
+    margin-bottom: 1em;
 }
