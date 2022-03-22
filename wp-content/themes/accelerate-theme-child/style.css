@@ -59,7 +59,9 @@ ul#menu-social-media-nav.social-media-menu li {
 }
 
 ul#menu-social-media-nav.social-media-menu li :before {
-    color: #909090;
+    color: white;
+    background-color: black;
+    border-radius: 30px;
 }
 
 /* ----- Featured Work on Front Page */
@@ -110,4 +112,23 @@ div.case-study-images {
     float: left;
     width: 60%;
     margin-bottom: 1em;
+}
+
+/* ----- Contact Us Form */
+
+/* h2 and inputs */
+#primary.site-content.sidebar {
+    max-width: 750px;
+}
+
+/* labels */
+.nf-form-content .label-above .nf-field-label {
+    color: #6a6c6e;
+}
+
+/* The Send Button */
+input#nf-field-4.ninja-forms-field.nf-element {
+    background: #45ac9d;
+    width: 200px;
+    float: right;
 }
