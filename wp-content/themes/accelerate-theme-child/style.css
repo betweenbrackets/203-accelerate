@@ -11,8 +11,8 @@ Text Domain:  accelerate-theme-child
 */
 
 @font-face {
-    font-family: 'racing-sans-one-regular';
-    src: url('/Applications/MAMP/htdocs/203-accelerate/wp-content/themes/accelerate-theme-child/fonts/RacingSansOne-Regular.woff') format('woff');
+    font-family: 'racing-sans-one';
+    src: url('/Applications/MAMP/htdocs/203-accelerate/wp-content/themes/accelerate-theme-child/fonts/RacingSansOne-Regular.ttf') format('ttf');
     font-weight: normal;
     font-style: normal;
     }
@@ -229,7 +229,7 @@ a.not-found {
     text-decoration: underline;
 }
 span.not-found {
-    font-family: 'racing-sans-one-regular';
+    font-family: 'racing-sans-one';
     text-transform: uppercase;
     color:#45ac9d;
 }
