@@ -215,3 +215,11 @@ div.about-contact a.button {
     margin-top: 2em;
    
 }
+
+/* ----- 404 Page */
+a.not-found {
+    text-decoration: underline;
+}
+span.not-found {
+    color:#45ac9d;
+}
