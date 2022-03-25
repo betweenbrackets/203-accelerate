@@ -20,7 +20,7 @@ get_header(); ?>
 </div><!-- #primary -->
 
 <!-- Query to display 3 case studies on the home page -->
-<section class="featured-work"
+<section class="featured-work">
 	<div class = "site-content">
 		<h4> Featured Work </h4>
 		<ul class="homepage-featured-work">

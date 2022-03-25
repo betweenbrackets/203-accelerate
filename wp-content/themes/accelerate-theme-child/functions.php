@@ -35,6 +35,21 @@ function create_custom_post_types() {
 			'menu_icon' => 'dashicons-index-card',
         )
     );
+
+    // Custom Post Type - Services
+    register_post_type( 'services',
+        array(
+            'labels' => array(
+                'name' => __( 'Services' ),
+                'singular_name' => __( 'Service' )
+            ),
+            'public' => true,
+            // ----- Services display on the About page only
+            'has_archive' => false,
+            'rewrite' => array( 'slug' => 'services' ),
+			'menu_icon' => 'dashicons-superhero',
+        )
+    );
 }
 // Hook this custom post type function into the theme
 add_action( 'init', 'create_custom_post_types' );
