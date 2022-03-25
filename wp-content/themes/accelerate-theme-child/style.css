@@ -10,6 +10,13 @@ Tags:     	light, dark, two-columns, right-sidebar, responsive-layout, accessibi
 Text Domain:  accelerate-theme-child
 */
 
+@font-face {
+    font-family: 'racing-sans-one-regular';
+    src: url('/Applications/MAMP/htdocs/203-accelerate/wp-content/themes/accelerate-theme-child/fonts/RacingSansOne-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    }
+
 .home-page {
     background: url("img/taxi-photo.jpg") no-repeat scroll right center / cover rgba(0, 0, 0, 0);
 }
@@ -217,9 +224,12 @@ div.about-contact a.button {
 }
 
 /* ----- 404 Page */
+
 a.not-found {
     text-decoration: underline;
 }
 span.not-found {
+    font-family: 'racing-sans-one-regular';
+    text-transform: uppercase;
     color:#45ac9d;
 }
