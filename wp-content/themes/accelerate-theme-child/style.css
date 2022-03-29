@@ -10,6 +10,7 @@ Tags:     	light, dark, two-columns, right-sidebar, responsive-layout, accessibi
 Text Domain:  accelerate-theme-child
 */
 
+/* Hosting fonts for the 404 Page */
 @font-face {
     font-family: 'racing-sans-one';
     src: url('/Applications/MAMP/htdocs/203-accelerate/wp-content/themes/accelerate-theme-child/fonts/RacingSansOne-Regular.ttf') format('ttf');
@@ -49,6 +50,11 @@ background: #45ac9d;
 	font-size: 1.5em;
 }
 
+.blog-post p {
+    width: 375px;
+    margin: 0 0 1.5em 0;
+}
+
 .read-more-link {
 	font-family: 'Montserrat';
 	font-weight: 700;
@@ -56,6 +62,7 @@ background: #45ac9d;
 	text-transform: uppercase;
 }
 
+/* Social Media Icons: Footer  */
 ul#menu-social-media-nav.social-media-menu {
     text-align: center;
     list-style-type: none;
@@ -71,6 +78,30 @@ ul#menu-social-media-nav.social-media-menu li :before {
     background-color: black;
     padding: .20em;
     border-radius: 30px;
+}
+/* Social Media Icons: Blog Posts */
+.shared-counts-icon {
+    background-color: black;
+    padding: .20em;
+    border-radius: 30px;
+    margin: .25em;
+}
+.shared-counts-wrap.style-icon .shared-counts-button .shared-counts-icon svg {
+    fill:#fff;
+    width: 16px;
+    height:16px
+}
+.shared-counts-wrap.style-icon .shared-counts-button:hover {
+    text-decoration:none
+}
+.shared-counts-wrap.style-icon .shared-counts-button:hover.facebook svg {
+    fill:#45ac9d;
+}
+.shared-counts-wrap.style-icon .shared-counts-button:hover.twitter svg {
+    fill:#45ac9d;
+}
+.shared-counts-wrap.style-icon .shared-counts-button:hover.linkedin svg {
+    fill:#45ac9d;
 }
 
 /* ----- Featured Work on Front Page */
@@ -124,7 +155,6 @@ div.case-study-images {
 }
 
 /* ----- Contact Us Form */
-
 /* h2 and inputs */
 #primary.site-content.sidebar {
     max-width: 750px;
@@ -214,17 +244,14 @@ div.about-contact {
     border-top: 1px solid #bfbfbf;
 }
 div.about-contact h2 {
-    margin: 2em 0 0 0;
-    
+    margin: 2em 0 0 0; 
 }
 div.about-contact a.button {
     margin-left: 2em;
     margin-top: 2em;
-   
 }
 
 /* ----- 404 Page */
-
 a.not-found {
     text-decoration: underline;
 }
@@ -232,4 +259,21 @@ span.not-found {
     font-family: 'racing-sans-one';
     text-transform: uppercase;
     color:#45ac9d;
+}
+
+/* ------ Twitter Widget */
+#secondary {
+    margin-top: 50px; 
+}
+#secondary h4 {
+    font: 700 1em/1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
+    color: #a6a6a6;
+    text-transform: uppercase;
+    margin: 2em 0 .5em; 
+}
+#secondary h4.read-more-link {
+    color: #45ac9d;
+}
+#secondary h3 {
+	font-size: 1.5em;
 }
