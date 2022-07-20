@@ -33,7 +33,7 @@
 							<!-- This image call for styling the image element -->
 							<img src="<?php echo $image; ?>" />
 						<?php } ?>
-						<div class="apple">
+						<div class="">
 							<h2><?php the_title(); ?></h2>
 							<p><?php echo $text; ?></p>
 						</div>		

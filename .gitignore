@@ -3,3 +3,9 @@
 wp-config.php
 .htaccess
 wp-content/uploads
+wp-content/plugins/all-in-one-wp-migration/
+wp-content/ai1wm-backups/web.config
+wp-content/ai1wm-backups/robots.txt
+wp-content/ai1wm-backups/localhost-203-accelerate-20220604-191102-jpnb4k.wpress
+wp-content/ai1wm-backups/index.php
+wp-content/ai1wm-backups/index.html

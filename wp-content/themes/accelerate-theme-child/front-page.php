@@ -1,6 +1,5 @@
 <?php
 /**
- * THIS IS THE CHILD THEME
  * The template for displaying the homepage
  *
  * @package WordPress
@@ -19,7 +18,7 @@ get_header(); ?>
 	</div><!-- .main-content -->
 </div><!-- #primary -->
 
-<!-- Query to display 3 case studies on the home page -->
+<!-- Featured Work -->
 <section class="featured-work">
 	<div class = "site-content">
 		<h4> Featured Work </h4>
@@ -46,29 +45,44 @@ get_header(); ?>
 	</div>
 </section>
 
-<!-- Query to get the most recent blog post -->
-<section class="recent-posts">
-	<div class = "site-content">
-		<div class = "blog-post">
-			<h4> From the Blog </h4>
-			<!-- query for the posts -->
-			<?php query_posts('posts_per_page=1'); ?>
-			<!-- loop over the post to display data -->
-				<?php while ( have_posts() ) : the_post(); ?>
-					<h3><?php the_title(); ?></h3>
-					<?php the_excerpt(); ?>
-				<?php endwhile; ?>
-			<?php wp_reset_query(); ?>
-		</div>
-	</div>
-</section>
+<div class="recent-items-flex-container">
 
-<!-- Display Dynamic Sidebar -->
-<div class = "site-content">
-	<?php if ( is_active_sidebar( 'sidebar-2' ) ) : ?>
-	<div id="secondary" class="widget-area" role="complementary">
-		<?php dynamic_sidebar( 'sidebar-2' ); ?>
-	</div>
-	<?php endif; ?>
+	<!-- Recent Blog Post -->
+	<section class="recent-posts">
+		<div class = "site-content">
+			<div class = "blog-post">
+				<h4> From the Blog </h4>
+				<!-- query for the posts -->
+				<?php query_posts('posts_per_page=1'); ?>
+				<!-- loop over the post to display data -->
+					<?php while ( have_posts() ) : the_post(); ?>
+						<h3><?php the_title(); ?></h3>
+						<?php the_excerpt(); ?>
+					<?php endwhile; ?>
+				<?php wp_reset_query(); ?>
+			</div>
+		</div>
+	</section>
+
+	<!-- Recent Tweet -->
+	<section class = "recent-tweet">
+		<div class = "site-content">
+			<div class = "tweet">
+<!-- When Twitter configured, use code below -->
+				<!-- <h4>Recent Tweet</h4> -->
+				<?php if ( is_active_sidebar( 'sidebar-2' ) ) : ?>
+				<div id="secondary" class="widget-area" role="complementary">
+					<?php dynamic_sidebar( 'sidebar-2' ); ?>
+				</div>
+				<?php endif; ?>
+<!-- When Twitter configured, use code below -->
+				<!-- <div class="read-more-link"> -->
+					<!-- <a href="<?php /* echo home_url(); */ ?>//twitter.com/WITWomen"> -->
+						<!-- <span>Follow Us</span> &rsaquo;  -->
+					<!-- </a> -->
+				<!-- </div> -->
+			</div>
+		</div>
+	</section>
 </div>
 <?php get_footer(); ?>
